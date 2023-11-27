@@ -1,0 +1,36 @@
+{%extends "inheritdd.html"%}
+
+{%block body%}
+<div class="head">
+   <h2 data-text="This station's Data">This station's Data</h2>
+</div>
+<table id="table">
+<thead>
+        <th>Date</th>
+        <th>Hour</th>
+        <th>Température (°C)</th>
+        <th>Humidité%</th>
+        <th>Vitesse du vent</th>
+    {%for j in list%}
+</thead>
+<tbody>
+<tr>
+        <td data-label="date">{{j["date"]}}</td>
+        <td data-label="date">{{j["hours"]}}</td>
+        <td data-label="tc">{{j["tc"]}}</td>
+        <td data-label="u">{{j["u"]}}</td>
+        <td data-label="ff">{{j["ff"]}}</td>
+</tr>
+</tbody>
+    {%endfor%}
+</table>
+
+<div class="par">
+    <button class="save"><a id="save" href="save">Download</a></button>
+    <div class="graph">
+        <a id="Graphss" href="graphs">Show Graph</a>
+    </div>
+    
+    <div class="btnctn"><button id="btnback">Go back</button></div>
+</div>
+{%endblock%}

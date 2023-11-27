@@ -1,0 +1,17 @@
+Date
+Hour
+Température (°C)
+Humidité%
+Vitesse du vent
+
+
+
+"""@projet.route("/about")
+def second():
+    return"this is second page"""
+
+
+"""@projet.route("/aziz")
+def three():
+    return"three page"
+"""

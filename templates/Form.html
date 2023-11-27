@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='Form.css')}}"/>
+</head>
+<body>
+    <div class="weather_projet"><!-- = weather_projet -->
+         <img src="{{url_for('static', filename='weather.jpg')}}" alt="" class="weather_img"><!--weather_img  =  -->
+          <h1>Search A station </h1>
+
+          <form action="/Donnesform" method="post"><!-- action = the page this from will go to-->
+            <p>Entrer Station</p>
+            <input type="text" name="user_station" placeholder="Search a station" required>
+            <p>Entrer Date</p>
+            <input type="date" name="user_date" placeholder="Entrer date" required>
+            <input type="submit" name="" value="submit">
+          </form>
+           
+          
+
+     
+    </div>
+</body>
+</html>
